@@ -1,0 +1,34 @@
+[user]
+	name = Matt Passell
+	email = passell@cargurus.com
+[filter "hawser"]
+	clean = git hawser clean %f
+	smudge = git hawser smudge %f
+	required = true
+[branch]
+	autosetuprebase = always
+[diff]
+	tool = bcomp
+[difftool]
+	prompt = false
+[difftool "bcomp"]
+	trustExitCode = true
+	cmd = "/usr/local/bin/bcomp" \"$LOCAL\" \"$REMOTE\"
+[merge]
+	tool = bcomp
+[mergetool]
+	prompt = false
+[mergetool "bcomp"]
+	trustExitCode = true
+	cmd = "/usr/local/bin/bcomp" \"$LOCAL\" \"$REMOTE\" \"$BASE\" \"$MERGED\"
+[core]
+	autocrlf = input
+	pager = diff-so-fancy | less --tabs=4 -RFX
+[remote "origin"]
+	prune = true
+[push]
+	default = simple
+[filter "lfs"]
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
+	required = true
