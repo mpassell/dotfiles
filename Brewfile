@@ -23,6 +23,7 @@ brew 'git'
 brew 'libffi'
 brew 'pcre'
 brew 'glib'
+brew 'diff-so-fancy'
 brew 'openssl', args: ['universal']
 brew 'readline'
 brew 'sqlite'
