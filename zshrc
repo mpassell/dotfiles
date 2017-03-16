@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh configuration.
-ZSH=$HOME/.oh-my-zsh
+ZSH=~/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -53,7 +53,7 @@ export PATH=/usr/local/bin:$PATH:/usr/bin:/bin:/usr/sbin:/sw/bin
 export BUILD_PARALLEL_THREADS_COUNT=1C
 
 export DEPLOY_STATIC=yes
-export PROJECTS_HOME=/Users/mpassell/git_checkouts
+export PROJECTS_HOME=~/git_checkouts
 export PUSH_HOME=$PROJECTS_HOME/cg-build/local/devbox-push
 export CG_MAIN=$PROJECTS_HOME/cg-main
 
@@ -78,6 +78,6 @@ gch() {
 }
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
-[[ -s "/Users/mpassell/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/mpassell/.sdkman/bin/sdkman-init.sh"
+[[ -s "${HOME}/.sdkman/bin/sdkman-init.sh" ]] && source "${HOME}/.sdkman/bin/sdkman-init.sh"
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
