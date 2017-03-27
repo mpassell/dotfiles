@@ -46,6 +46,8 @@ source $ZSH/oh-my-zsh.sh
 
 export EDITOR=/usr/local/bin/emacs
 
+export JAVA_HOME=/Library/Java/Home
+
 # Customize to your needs...
 export PATH=/usr/local/bin:$PATH:/usr/bin:/bin:/usr/sbin:/sw/bin
 
@@ -56,6 +58,8 @@ export DEPLOY_STATIC=yes
 export PROJECTS_HOME=~/git_checkouts
 export PUSH_HOME=$PROJECTS_HOME/cg-build/local/devbox-push
 export CG_MAIN=$PROJECTS_HOME/cg-main
+
+ssh-add -A
 
 [[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
 
