@@ -48,16 +48,20 @@ export EDITOR=/usr/local/bin/emacs
 
 export JAVA_HOME=/Library/Java/Home
 
+export MAVEN_OPTS="-Xmx2g"
+
+export GOROOT=/usr/local/opt/go/libexec
+
 # Customize to your needs...
-export PATH=/usr/local/bin:$PATH:/usr/bin:/bin:/usr/sbin:/sw/bin
+export PATH=/usr/local/bin:$PATH:/usr/bin:/bin:/usr/sbin:/sw/bin:$GOROOT/bin:$GOPATH/bin:/usr/local/opt/node@8/bin
 
 # Include this if you have Maven 3.x and want to perform parallel builds (eg. 4 = 4 concurrent threads, 1C = 1 x <# of CPU cores), etc...)
-export BUILD_PARALLEL_THREADS_COUNT=1C
+export BUILD_PARALLEL_THREADS_COUNT=0.5C
 
 export DEPLOY_STATIC=yes
 export PROJECTS_HOME=~/git_checkouts
-export PUSH_HOME=$PROJECTS_HOME/cg-build/local/devbox-push
 export CG_MAIN=$PROJECTS_HOME/cg-main
+export PUSH_HOME=$CG_MAIN/cargurus-build/local/devbox-push
 
 ssh-add -A
 
