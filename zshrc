@@ -40,7 +40,7 @@ ZSH_THEME="robbyrussell"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git python ruby go pip mvn svn osx gradle rvm)
+plugins=(git python ruby go pip mvn svn osx gradle rvm docker emacs golang kubectl)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -51,6 +51,7 @@ export JAVA_HOME=/Library/Java/Home
 export MAVEN_OPTS="-Xmx2g"
 
 export GOROOT=/usr/local/opt/go/libexec
+export GOPATH=~/go
 
 # Customize to your needs...
 export PATH=/usr/local/bin:$PATH:/usr/bin:/bin:/usr/sbin:/sw/bin:$GOROOT/bin:$GOPATH/bin:/usr/local/opt/node@8/bin
