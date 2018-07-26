@@ -24,6 +24,7 @@
 [core]
 	autocrlf = input
 	pager = diff-so-fancy | less --tabs=4 -RFX
+	excludesfile = /Users/mpassell/.gitignore_global
 [remote "origin"]
 	prune = true
 [push]
